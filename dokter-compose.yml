@@ -1,0 +1,455 @@
+/*
+// Buat Lu Yang Jual Sc Ini Yang Jujur Jangan Sampe Nipu 
+   Apalagi Lari Dari Tanggung Jawab
+
+// Base ${botname}
+
+› Create By PUTZZ4YOU 
+› Base Ori PUTZZ4YOU 
+
+🌷 KALAU MAU RENAME TARO CREDITS GUA : ${botname}*/
+//recode : vallz
+//recodept2 : okta
+//=================================================//
+require('./hwkal')
+const { WA_DEFAULT_EPHEMERAL, getAggregateVotesInPollMessage, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, downloadContentFromMessage, areJidsSameUser, getContentType } = require("@whiskeysockets/baileys")
+const fs = require('fs')
+const util = require('util')
+const chalk = require('chalk')
+const os = require('os')
+const axios = require('axios')
+const fsx = require('fs-extra')
+const crypto = require('crypto')
+const ffmpeg = require('fluent-ffmpeg')
+const moment = require('moment-timezone')
+const { JSDOM } = require('jsdom')
+const { apikey } = require('./apikey.json')
+const { color, bgcolor } = require('./lib/color')
+const { uptotelegra } = require('./lib/upload')
+const { Primbon } = require('scrape-primbon')
+const primbon = new Primbon()
+const hxz = require('hxz-api')
+const ytdl = require("ytdl-core")
+const { Configuration, OpenAIApi } = require('openai')
+const { exec, spawn, execSync } = require("child_process")
+const { ngazap } = require('./baseikal/virtex/ngazap')
+const { buttonkal } = require('./baseikal/virtex/buttonkal')
+const { cttl } = require('./baseikal/virtex/cttl')
+const { tizi } = require('./baseikal/virtex/tizi')
+const { weg } = require('./baseikal/virtex/weg')
+const { virtex7 } = require('./baseikal/virtex/virtex7')
+const { smsg, tanggal, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom, getGroupAdmins } = require('./lib/myfunc')
+const { FajarNews, BBCNews, metroNews, CNNNews, iNews, KumparanNews, TribunNews, DailyNews, DetikNews, OkezoneNews, CNBCNews, KompasNews, SindoNews, TempoNews, IndozoneNews, AntaraNews, RepublikaNews, VivaNews, KontanNews, MerdekaNews, KomikuSearch, AniPlanetSearch, KomikFoxSearch, KomikStationSearch, MangakuSearch, KiryuuSearch, KissMangaSearch, KlikMangaSearch, PalingMurah, LayarKaca21, AminoApps, Mangatoon, WAModsSearch, Emojis, CoronaInfo, JalanTikusMeme,Cerpen, Quotes, Couples, Darkjokes } = require("dhn-api");
+//=================================================//
+// read database
+let tebaklagu = db.data.game.tebaklagu = []
+let _family100 = db.data.game.family100 = []
+let kuismath = db.data.game.math = []
+let tebakgambar = db.data.game.tebakgambar = []
+let tebakkata = db.data.game.tebakkata = []
+let caklontong = db.data.game.lontong = []
+let caklontong_desk = db.data.game.lontong_desk = []
+let tebakkalimat = db.data.game.kalimat = []
+let tebaklirik = db.data.game.lirik = []
+let tebaktebakan = db.data.game.tebakan = []
+
+const yts = require('./scrape/yt-search')
+const { ytSearch } = require('./scrape/yt')
+const thumbnail = fs.readFileSync ('./baseikal/image/mamak.jpg')
+const thumb = fs.readFileSync ('./baseikal/image/mamak.jpg')
+const kalimage = fs.readFileSync ('./baseikal/image/mamak.jpg')
+const pengguna = JSON.parse(fs.readFileSync('./database/user.json'))
+const owner = JSON.parse(fs.readFileSync('./premium.json'))
+const vnnye = JSON.parse(fs.readFileSync('./database/vnadd.json'))
+const docunye = JSON.parse(fs.readFileSync('./database/docu.json'))
+const zipnye = JSON.parse(fs.readFileSync('./database/zip.json'))
+const apknye = JSON.parse(fs.readFileSync('./database/apk.json'))
+const ntilink = JSON.parse(fs.readFileSync("./lib/antilink.json"))
+const antidel = JSON.parse(fs.readFileSync("./lib/antidel.json"))
+const banned = JSON.parse(fs.readFileSync('./baseikal/dbnye/banned.json'))
+
+virgam = fs.readFileSync(`./baseikal/image/deden.jpeg`)
+//=================================================//
+module.exports = haikal = async (haikal, m, chatUpdate, store) => {
+ try {
+var body = (m.mtype === 'conversation') ? m.message.conversation : (m.mtype == 'imageMessage') ? m.message.imageMessage.caption : (m.mtype == 'videoMessage') ? m.message.videoMessage.caption : (m.mtype == 'extendedTextMessage') ? m.message.extendedTextMessage.text : (m.mtype === 'messageContextInfo') ? (m.text) : ''
+var budy = (typeof m.text == 'string' ? m.text : '')
+var prefix = prefa ? /^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi.test(body) ? body.match(/^[°•π÷×¶∆£¢€¥®™+✓_=|~!?@#$%^&.©^]/gi)[0] : "" : prefa ?? global.prefix
+
+//=================================================//
+const isCmd = body.startsWith(prefix)
+const command = body.replace(prefix, '').trim().split(/ +/).shift().toLowerCase()//Kalau mau Single prefix Lu ganti pake ini = const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
+const args = body.trim().split(/ +/).slice(1)
+const pushname = m.pushName || "No Name"
+const text = q = args.join(" ")
+const { type, quotedMsg, mentioned, now, fromMe } = m
+const quoted = m.quoted ? m.quoted : m
+const mime = (quoted.msg || quoted).mimetype || ''
+const isMedia = /image|video|sticker|audio/.test(mime)
+const from = mek.key.remoteJid
+const botNumber = await haikal.decodeJid(haikal.user.id)
+const isCreator = [botNumber, ...owner].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
+const sender = m.isGroup ? (m.key.participant ? m.key.participant : m.participant) : m.key.remoteJid
+const groupMetadata = m.isGroup ? await haikal.groupMetadata(from).catch(e => {}) : ''
+const groupName = m.isGroup ? groupMetadata.subject : ''
+const participants = m.isGroup ? await groupMetadata.participants : ''
+const groupAdmins = m.isGroup ? await getGroupAdmins(participants) : ''
+const isBotAdmins = m.isGroup ? groupAdmins.includes(botNumber) : false
+const isAdmins = m.isGroup ? groupAdmins.includes(m.sender) : false
+const welcm = m.isGroup ? wlcm.includes(from) : false
+const welcmm = m.isGroup ? wlcmm.includes(from) : false
+const AntiLink = m.isGroup ? ntilink.includes(from) : false 
+const autodelete = from && isCmd ? antidel.includes(from) : false 
+const isBan = banned.includes(m.sender)
+const isUser = pengguna.includes(m.sender)
+const content = JSON.stringify(m.message)
+const numberQuery = text.replace(new RegExp("[()+-/ +/]", "gi"), "") + "@s.whatsapp.net"
+const mentionByTag = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
+const Input = mentionByTag[0] ? mentionByTag[0] : q ? numberQuery : false
+const time = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('HH:mm:ss z')
+const salam = moment(Date.now()).tz('Asia/Jakarta').locale('id').format('a')
+const qtod = m.quoted? "true":"false"
+//=================================================//}
+const cap = 'TaaOfc'
+const kalgans = { 
+key: {
+fromMe: [], 
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "0@s.whatsapp.net" } : {}) 
+},
+
+'message': {
+	"interactiveMessage": {
+						"header": {
+						
+							"hasMediaAttachment": [],
+							"jpegThumbnail": thumb,
+													},
+						"nativeFlowMessage": {
+							"buttons": [
+								{
+									"name": "review_and_pay",
+									"buttonParamsJson": "{\"currency\":\"IDR\",\"external_payment_configurations\":[{\"uri\":\"\",\"type\":\"payment_instruction\",\"payment_instruction\":\"hey ini test\"}],\"payment_configuration\":\"\",\"payment_type\":\"\",\"total_amount\":{\"value\":2500000,\"offset\":100},\"reference_id\":\"4MX98934S0D\",\"type\":\"physical-goods\",\"order\":{\"status\":\"pending\",\"description\":\"\",\"subtotal\":{\"value\":2500000,\"offset\":100},\"items\":[{\"retailer_id\":\"6285731947500\",\"product_id\":\"685731947500\",\"name\":\"taaofc\",\"amount\":{\"value\":2500000,\"offset\":100},\"quantity\":1}]}}"
+								}
+							]
+			}
+}}}
+//=================================================
+const hw = { 
+key: {
+fromMe: false, 
+participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) 
+},
+"message": {
+"audioMessage": {
+"url": "https://mmg.whatsapp.net/v/t62.7114-24/56189035_1525713724502608_8940049807532382549_n.enc?ccb=11-4&oh=01_AdR7-4b88Hf2fQrEhEBY89KZL17TYONZdz95n87cdnDuPQ&oe=6489D172&mms3=true",
+"mimetype": "audio/mp4",
+"fileSha256": "oZeGy+La3ZfKAnQ1epm3rbm1IXH8UQy7NrKUK3aQfyo=",
+"fileLength": "1067401",
+"seconds": 60,
+"ptt": true,
+"mediaKey": "PeyVe3/+2nyDoHIsAfeWPGJlgRt34z1uLcV3Mh7Bmfg=",
+"fileEncSha256": "TLOKOAvB22qIfTNXnTdcmZppZiNY9pcw+BZtExSBkIE=",
+"directPath": "/v/t62.7114-24/56189035_1525713724502608_8940049807532382549_n.enc?ccb=11-4&oh=01_AdR7-4b88Hf2fQrEhEBY89KZL17TYONZdz95n87cdnDuPQ&oe=6489D172",
+"mediaKeyTimestamp": "1684161893"
+}}}
+const reply = (teks) => {
+return haikal.sendMessage(from, { text: teks, contextInfo:{"externalAdReply": {"title": `DEVELOPER ${botname}`,"body": `Selamat ${salam} kak ${pushname}`, "previewType": "PHOTO","thumbnailUrl": 'https://telegra.ph/file/52a9862e26a52b4a390e2.png',"thumbnail": thumb,"sourceUrl": `https://wa.me/6285731947500?text=bang+i+love+yuuu`}}}, { quoted:m})} 
+
+function pickRandom(list) {
+return list[Math.floor(Math.random() * list.length)]
+}
+
+const downloadMp3 = async (Link) => {
+try {
+await ytdl.getInfo(Link)
+let mp3File = getRandom('.mp3')
+console.log(color('Download Audio With ytdl-core'))
+ytdl(Link, { filter: 'audioonly' })
+.pipe(fs.createWriteStream(mp3File))
+.on('finish', async () => {
+await haikal.sendMessage(from, { audio: fs.readFileSync(mp3File), mimetype: 'audio/mp4' }, { quoted: m })
+fs.unlinkSync(mp3File)
+})
+} catch (err) {
+m.reply(`${err}`)
+}
+}
+//=================================================
+const downloadMp4 = async (Link) => {
+try {
+await ytdl.getInfo(Link)
+let mp4File = getRandom('.mp4')
+console.log(color('Download Video With ytdl-core'))
+let nana = ytdl(Link)
+.pipe(fs.createWriteStream(mp4File))
+.on('finish', async () => {
+await haikal.sendMessage(from, { video: fs.readFileSync(mp4File), gifPlayback: false }, { quoted: m })
+fs.unlinkSync(`./${mp4File}`)
+})
+} catch (err) {
+m.reply(`${err}`)
+}
+}
+//=================================================
+async function loading () {
+var vallzalyws = [
+ '░░░░░░░░░░░░░░░',
+ '■░░░░░░░░░░░░░░',
+ '■■░░░░░░░░░░░░░',
+ '■■■░░░░░░░░░░░░',
+ '■■■■░░░░░░░░░░░',
+ '■■■■■░░░░░░░░░░',
+ '■■■■■■░░░░░░░░░',
+ '■■■■■■■░░░░░░░░',
+ '■■■■■■■■░░░░░░░',
+ '■■■■■■■■■░░░░░░',
+ '■■■■■■■■■■░░░░░',
+ '■■■■■■■■■■■░░░░',
+ '■■■■■■■■■■■■░░░',
+ '■■■■■■■■■■■■■░░',
+ '■■■■■■■■■■■■■■░',
+ '■■■■■■■■■■■■■■■',
+ 'sᴜᴄᴄᴇssғᴜʟʟ'
+]
+let { key } = await haikal.sendMessage(from, {text: 'ʟᴏᴀᴅɪɴɢ...'})//Pengalih isu
+
+for (let i = 0; i < vallzalyws.length; i++) {
+/*await delay(10)*/
+await haikal.sendMessage(from, {text: vallzalyws[i], edit: key });//PESAN LEPAS
+}
+}
+if (autodelete) {
+haikal.sendMessage(m.chat,
+{
+delete: {
+remoteJid: m.chat,
+fromMe: true,
+id: mek.key.id,
+participant: mek.key.participant
+}
+})
+}
+//=================================================
+/*let reactionMessage = {
+                    react: {
+                        text: `👁️‍🗨️`,
+                        key: { remoteJid: m.chat, fromMe: true, id: mek.key.id }
+                    }
+                }
+                await sleep(1500)
+                haikal.sendMessage(m.chat, reactionMessage)*/
+//=================================================//
+if (!haikal.public) {
+if (!m.key.fromMe) return
+}
+let rn = ['recording']
+let jd = rn[Math.floor(Math.random() * rn.length)];
+if (m.message) {
+haikal.sendPresenceUpdate(jd, from)
+console.log(chalk.black(chalk.bgWhite('[ PESAN ]')), chalk.black(chalk.bgGreen(new Date)), chalk.black(chalk.bgBlue(budy || m.mtype)) + '\n' + chalk.magenta('=> Dari'), chalk.green(pushname), chalk.yellow(m.sender) + '\n' + chalk.blueBright('=> Di'), chalk.green(m.isGroup ? pushname : 'Private Chat', from))
+}
+if (isCmd && !isUser) {
+pengguna.push(sender)
+fs.writeFileSync('./database/user.json', JSON.stringify(pengguna, null, 2))
+}
+// Anti Link
+if (AntiLink) {
+if (body.match(/(chat.whatsapp.com\/)/gi)) {
+if (!isBotAdmins) return m.reply(`${mess.botAdmin}, _Untuk menendang orang yang mengirim link group_`)
+let gclink = (`https://chat.whatsapp.com/`+await haikal.groupInviteCode(m.chat))
+let isLinkThisGc = new RegExp(gclink, 'i')
+let isgclink = isLinkThisGc.test(m.text)
+if (isgclink) return haikal.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAnda tidak akan ditendang oleh bot karena yang Anda kirim adalah link ke grup ini`})
+if (isAdmins) return haikal.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\nAdmin sudah mengirimkan link, admin bebas memposting link apapun`})
+if (isCreator) return haikal.sendMessage(m.chat, {text: `\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\Owner telah mengirim link, owner bebas memposting link apa pun`})
+await haikal.sendMessage(m.chat,
+{
+delete: {
+remoteJid: m.chat,
+fromMe: false,
+id: mek.key.id,
+participant: mek.key.participant
+}
+})
+haikal.sendMessage(from, {text:`\`\`\`「 Group Link Terdeteksi 」\`\`\`\n\n@${m.sender.split("@")[0]} Jangan kirim group link di group ini`, contextInfo:{mentionedJid:[sender]}}, {quoted:hw})
+}
+}
+//=================================================//
+// Respon Cmd with media
+if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
+let hash = global.db.data.sticker[m.msg.fileSha256.toString('base64')]
+let { text, mentionedJid } = hash
+let messages = await generateWAMessage(from, { text: text, mentions: mentionedJid }, {
+userJid: haikal.user.id,
+quoted : m.quoted && m.quoted.fakeObj
+})
+messages.key.fromMe = areJidsSameUser(m.sender, haikal.user.id)
+messages.key.id = m.key.id
+messages.pushName = m.pushName
+if (m.isGroup) messages.participant = m.sender
+let msg = {
+...chatUpdate,
+messages: [proto.WebMessageInfo.fromObject(messages)],
+type: 'append'
+}
+haikal.ev.emit('messages.upsert', msg)
+}
+//=================================================//
+if (budy.startsWith('©️')) {
+try {
+return m.reply(JSON.stringify(eval(`${args.join(' ')}`),null,'\t'))
+} catch (e) {
+m.reply(e)
+}
+}
+
+async function sendGeekzMessage(chatId, message, options = {}){
+    let generate = await generateWAMessage(chatId, message, options)
+    let type2 = getContentType(generate.message)
+    if ('contextInfo' in options) generate.message[type2].contextInfo = options?.contextInfo
+    if ('contextInfo' in message) generate.message[type2].contextInfo = message?.contextInfo
+    return await haikal.relayMessage(chatId, generate.message, { messageId: generate.key.id })
+}
+
+const sendapk = (teks) => {
+haikal.sendMessage(from, { document: teks, mimetype: 'application/vnd.android.package-archive'}, {quoted:m})
+m.reply('*Rusak Om !! Yang Bener Contoh : Yoapk TaaOfc*')
+}
+for (let ikalii of apknye) {
+if (budy === ikalii) {
+let buffer = fs.readFileSync(`./database/apk/${ikalii}.apk`)
+sendapk(buffer)
+}
+}
+//=================================================//
+const sendzip = (teks) => {
+haikal.sendMessage(from, { document: teks, mimetype: 'application/zip'}, {quoted:m})
+m.reply('*Rusak Om !! Yang Bener Contoh : Yozip TaaOfc*')
+}
+for (let ikali of zipnye) {
+if (budy === ikali) {
+let buffer = fs.readFileSync(`./database/zip/${ikali}.zip`)
+sendzip(buffer)
+}
+}
+//=================================================//
+const senddocu = (teks) => {
+haikal.sendMessage(from, { document: teks, mimetype: 'application/pdf'}, {quoted:m})
+m.reply('*Rusak Om !! Yang Bener Contoh : Yopdf TaaOfc*')
+}
+for (let ikal of docunye) {
+if (budy === ikal) {
+let buffer = fs.readFileSync(`./database/Docu/${ikal}.pdf`)
+senddocu(buffer)
+}
+}
+const sendvn = (teks) => {
+haikal.sendMessage(from, { audio: teks, mimetype: 'audio/mp4', ptt: true }, {quoted:m})
+}
+
+for (let anju of vnnye) {
+if (budy === anju) {
+let buffer = fs.readFileSync(`./database/Audio/${anju}.mp3`)
+sendvn(buffer)
+}
+}
+//=================================================//
+var createSerial = (size) => {
+return crypto.randomBytes(size).toString('hex').slice(0, size)
+}
+try {
+ppuser = await haikal.profilePictureUrl(m.sender, 'image')
+} catch (err) {
+ppuser = 'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60'
+}
+ppnyauser = await getBuffer(ppuser)
+try {
+let isNumber = x => typeof x === 'number' && !isNaN(x)
+let limitUser = global.limitawal.free
+let user = global.db.data.users[m.sender]
+if (typeof user !== 'object') global.db.data.users[m.sender] = {}
+if (user) {
+if (!isNumber(user.afkTime)) user.afkTime = -1
+if (!('afkReason' in user)) user.afkReason = ''
+if (!isNumber(user.limit)) user.limit = limitUser
+} else global.db.data.users[m.sender] = {
+afkTime: -1,
+afkReason: '',
+limit: limitUser,
+}
+} catch (err) {
+console.log(err)
+} 
+//=================================================//
+if (('family100'+from in _family100) && isCmd) {
+kuis = true
+let room = _family100['family100'+from]
+let teks = budy.toLowerCase().replace(/[^\w\s\-]+/, '')
+let isSurender = /^((me)?nyerah|surr?ender)$/i.test(m.text)
+if (!isSurender) {
+ let index = room.jawaban.findIndex(v => v.toLowerCase().replace(/[^\w\s\-]+/, '') === teks)
+ if (room.terjawab[index]) return !0
+ room.terjawab[index] = m.sender
+}
+let isWin = room.terjawab.length === room.terjawab.filter(v => v).length
+let caption = `
+Jawablah Pertanyaan Berikut :\n${room.soal}\n\n\nTerdapat ${room.jawaban.length} Jawaban ${room.jawaban.find(v => v.includes(' ')) ? `(beberapa Jawaban Terdapat Spasi)` : ''}
+${isWin ? `Semua Jawaban Terjawab` : isSurender ? 'Menyerah!' : ''}
+${Array.from(room.jawaban, (jawaban, index) => {
+return isSurender || room.terjawab[index] ? `(${index + 1}) ${jawaban} ${room.terjawab[index] ? '@' + room.terjawab[index].split('@')[0] : ''}`.trim() : false
+}).filter(v => v).join('\n')}
+${isSurender ? '' : `Perfect Player`}`.trim()
+haikal.sendText(from, caption, m, { contextInfo: { mentionedJid: parseMention(caption) }}).then(mes => { return _family100['family100'+from].pesan = mesg }).catch(_ => _)
+if (isWin || isSurender) delete _family100['family100'+from]
+}
+
+if (tebaklagu.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = tebaklagu[m.sender.split('@')[0]]
+if (budy.toLowerCase() == jawaban) {
+   haikal.sendMessage(m.chat, { image: ppnyauser, caption: `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? Silahkan Ketik Tebak Lagu`}, {quoted:m}) 
+ delete tebaklagu[m.sender.split('@')[0]]
+} else m.reply('*Jawaban Salah!*')
+}
+
+if (kuismath.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = kuismath[m.sender.split('@')[0]]
+if (budy.toLowerCase() == jawaban) {
+ await m.reply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? kirim ${prefix}math mode`)
+ delete kuismath[m.sender.split('@')[0]]
+} else m.reply('*Jawaban Salah!*')
+}
+
+if (tebakgambar.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = tebakgambar[m.sender.split('@')[0]]
+if (budy.toLowerCase() == jawaban) {
+ haikal.sendMessage(m.chat, { image: ppnyauser, caption: `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? Silahkan Ketik Tebak Gambar`}, {quoted:m})
+ delete tebakgambar[m.sender.split('@')[0]]
+} else m.reply('*Jawaban Salah!*')
+}
+
+if (tebakkata.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = tebakkata[m.sender.split('@')[0]]
+if (budy.toLowerCase() == jawaban) {
+ haikal.sendMessage(m.chat, { image: ppnyauser, caption: `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? Silahkan Ketik Tebak Kata`}, {quoted:m})  
+ delete tebakkata[m.sender.split('@')[0]]
+} else m.reply('*Jawaban Salah!*')
+}
+
+if (caklontong.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = caklontong[m.sender.split('@')[0]]
+deskripsi = caklontong_desk[m.sender.split('@')[0]]
+if (budy.toLowerCase() == jawaban) {
+ haikal.sendMessage(m.chat, { image: ppnyauser, caption: `🎮 Tebak Lontong 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? Silahkan Ketik Tebak Lontong`}, {quoted:m}) 
+ delete caklontong[m.sender.split('@')[0]]
+delete caklontong_desk[m.sender.split('@')[0]]
+} else m.reply('*Jawaban Salah!*')
+}
+
+if (tebakkalimat.hasOwnProperty(m.sender.split('@')[0]) && isCmd) {
+kuis = true
+jawaban = tebak
